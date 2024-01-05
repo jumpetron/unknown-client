@@ -1,0 +1,55 @@
+.download-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0 60px 0;
+  margin-bottom: 100px;
+}
+
+.download-content h2 {
+  font-size: 30px;
+}
+
+.app-store {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.store-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: black;
+  color: #fff;
+  padding: 10px 25px;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 28px;
+}
+
+.store-content small {
+  font-size: 10px;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 540px) {
+  .app-store {
+    flex-direction: column;
+  }
+  .download-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .download-content h2 {
+    font-size: 24px;
+  }
+}

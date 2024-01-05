@@ -1,0 +1,42 @@
+.product-data {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.brand-container {
+  padding: 130px 0 0 0;
+}
+
+.keen-slider {
+  z-index: 1 !important;
+}
+
+.keen-slider img {
+  width: 100%;
+  border: 1px solid black;
+  object-fit: cover;
+}
+
+.brand-product-container {
+  padding: 80px 0;
+}
+
+.brand-title {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.load-more-btn {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 30px;
+}
+
+@media (max-width: 540px) {
+  .product-data {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+}

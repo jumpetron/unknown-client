@@ -1,0 +1,71 @@
+.add-product-content {
+  padding: 50px 0;
+  margin: 100px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 50px;
+}
+
+.field-box {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.field-box input,
+.field-box select,
+.text-area textarea {
+  border: 1px solid #fff;
+  outline: none;
+  padding: 8px 20px;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 5px 5px 40px #dcdcdc, -5px -5px 40px #e4e4e4;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.text-area textarea {
+  margin-bottom: 20px;
+}
+.name-field,
+.brand-field,
+.image-field,
+.qty-field,
+.type-field,
+.category-field {
+  flex-basis: 50%;
+}
+
+.field-box p,
+.text-area p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.field-box input:focus,
+.text-area textarea:focus {
+  border: 1px solid #f5b7b7;
+}
+
+.form-box input[type="submit"] {
+  width: 100%;
+  cursor: pointer;
+  padding: 8px 0;
+  font-size: 15px;
+  font-family: "Montserrat Alternates", sans-serif;
+  outline: none;
+  border: 1px solid black;
+  background: black;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 5px 5px 10px #dcdcdc, -5px -5px 10px #e4e4e4;
+}
+
+.form-box input[type="submit"]:hover {
+  border: 1px solid #fff;
+  background: #fff;
+  color: black;
+  box-shadow: 5px 5px 10px #dcdcdc, -5px -5px 10px #e4e4e4;
+}

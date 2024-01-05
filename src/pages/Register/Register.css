@@ -1,0 +1,73 @@
+.register-container {
+  padding: 100px 0;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-form {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 100px 80px;
+  width: 50%;
+}
+
+.register-form input {
+  width: 100%;
+  border: 1px solid #fff8ee;
+  outline: none;
+  padding: 10px 18px;
+  font-family: "Montserrat Alternates", sans-serif;
+  margin: 12px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.register-form input:focus {
+  border: 1px solid #f5b7b7;
+}
+
+.register-form input[type="submit"] {
+  background: black;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.register-form input[type="submit"]:hover {
+  background: #fff;
+  color: black;
+}
+
+.login-title {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.register-option {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  row-gap: 12px;
+}
+
+.register-social {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.go-to-login {
+  text-align: center;
+  font-size: 13px;
+}
+
+.email-field p,
+.password-field p,
+.name-field p,
+.photo-field p {
+  font-size: 14px;
+  font-weight: 500;
+}

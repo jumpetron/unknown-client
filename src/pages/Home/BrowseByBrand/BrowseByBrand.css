@@ -1,0 +1,49 @@
+.browse-by-brand {
+  margin: 50px auto;
+}
+
+.brand-logo-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-logo-box {
+  padding: 5px;
+  height: 120px;
+}
+
+.brand-logo {
+  border: 1px solid black;
+  padding: 5px 12px;
+  margin-bottom: 10px;
+}
+
+.brand-logo img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 540px) {
+  .brand-logo-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .brand-logo-box {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .browse-by-brand {
+    margin-top: 100px;
+  }
+}

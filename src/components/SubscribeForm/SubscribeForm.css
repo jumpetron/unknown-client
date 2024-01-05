@@ -1,0 +1,40 @@
+.subscribe-form-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: antiquewhite;
+  border-radius: 6px;
+  row-gap: 20px;
+  padding: 80px 0;
+}
+
+.subscribe-container {
+  padding: 80px 0;
+}
+
+.subscribe-form-box input {
+  outline: none;
+  border: 1px solid rgba(114, 108, 108, 0.699);
+  padding: 8px 15px;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.subscribe-form-box input[type="submit"] {
+  background: black;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.subscribe-form-box input[type="submit"]:hover {
+  background: #fff;
+  color: black;
+}
+
+@media (max-width: 540px) {
+  .subscribe-form-box h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+}

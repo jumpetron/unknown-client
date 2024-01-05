@@ -1,0 +1,60 @@
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.footer-logo img {
+  width: 100%;
+}
+
+.footer {
+  padding: 130px 0;
+  background: black;
+  color: #fff;
+}
+
+.browse,
+.company,
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.browse a,
+.company a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.newsletter input {
+  padding: 5px 12px;
+  outline: none;
+  border: 1px solid black;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.newsletter input[type="submit"] {
+  background: #ff3f3f;
+  color: #fff;
+  border: 1px solid #ff3f3f;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.newsletter input[type="submit"]:active {
+  transform: scale(0.9);
+}
+
+@media (max-width: 540px) {
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+}

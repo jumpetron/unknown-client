@@ -1,0 +1,45 @@
+.cart-product-container {
+  padding: 100px 0;
+}
+
+.cart-title {
+  margin-bottom: 20px;
+}
+
+.cart-footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgba(121, 116, 116, 0.397);
+  padding: 20px 0;
+}
+
+.checkout-btn {
+  border: 1px solid black;
+  outline: none;
+  padding: 8px;
+  background: black;
+  color: #fff;
+  font-family: "Montserrat Alternates", sans-serif;
+  cursor: pointer;
+  width: 150px;
+  transition: all 0.3s ease-in-out;
+}
+
+.checkout-btn:hover {
+  color: black;
+  background: #fff;
+}
+
+.swal2-popup {
+  background: #fff8ee;
+}
+
+.swal2-confirm {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+@media (max-width: 540px) {
+  .cart-title {
+    font-size: 18px;
+  }
+}
