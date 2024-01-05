@@ -31,7 +31,8 @@ const Register = () => {
     }
 
     // Password validation
-    const passwordRegex = /^(?=.[A-Z])(?=.[!@#$%^&])[a-zA-Z0-9!@#$%^&]{6,}$/;
+    const passwordRegex =
+      /^(?=.*[A-Z])(?=.*[!@#$%^&*()-_=+[\]{};:'",.<>/?]).{6,}$/;
     if (password.length < 6 || !password.match(passwordRegex)) {
       Swal.fire({
         icon: "error",
