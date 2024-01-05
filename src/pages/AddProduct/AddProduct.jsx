@@ -32,7 +32,7 @@ const AddProduct = () => {
     };
 
     // create new product
-    fetch("https://unknown-server-six.vercel.app/products", {
+    fetch("https://unknown-server-rho.vercel.app/products", {
       method: "POST",
       headers: {
         "content-type": "application/json",

@@ -38,12 +38,12 @@ export const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`https://unknown-server-six.vercel.app/${params.brandName}`),
+          fetch(`https://unknown-server-rho.vercel.app/${params.brandName}`),
       },
       {
         path: "/product/:id",
         loader: ({ params }) =>
-          fetch(`https://unknown-server-six.vercel.app/product/${params.id}`),
+          fetch(`https://unknown-server-rho.vercel.app/product/${params.id}`),
         element: (
           <PrivateRoute>
             <SingleProduct />
@@ -54,7 +54,7 @@ export const router = createBrowserRouter([
         path: "/product/update/:id",
         loader: ({ params }) =>
           fetch(
-            `https://unknown-server-six.vercel.app/product/update/${params.id}`
+            `https://unknown-server-rho.vercel.app/product/update/${params.id}`
           ),
         element: (
           <PrivateRoute>

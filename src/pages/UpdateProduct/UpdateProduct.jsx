@@ -47,7 +47,7 @@ const UpdateProduct = () => {
     };
 
     // create new product
-    fetch(`https://unknown-server-six.vercel.app/products/${_id}`, {
+    fetch(`https://unknown-server-rho.vercel.app/products/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

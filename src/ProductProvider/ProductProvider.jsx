@@ -10,7 +10,14 @@ const ProductProvider = ({ children }) => {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState();
 
-  const url = `https://unknown-server-six.vercel.app/orders?email=${user?.email}`;
+  const url = `https://unknown-server-rho.vercel.app/orders?email=${user?.email}`;
+
+  useEffect(() => {
+    fetch("https://unknown-server-rho.vercel.app/products")
+      .then((res) => res.json())
+      .then((data) => setProducts(data));
+  }, [products]);
+
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
@@ -18,12 +25,6 @@ const ProductProvider = ({ children }) => {
         setCart(data);
       });
   }, [url, cart]);
-
-  useEffect(() => {
-    fetch("https://unknown-server-six.vercel.app/products")
-      .then((res) => res.json())
-      .then((data) => setProducts(data));
-  }, [products]);
 
   const handleCart = (id, name, price, image) => {
     if (!user) {
@@ -37,7 +38,7 @@ const ProductProvider = ({ children }) => {
         image,
         date: new Date().toLocaleDateString("en-US"),
       };
-      fetch("https://unknown-server-six.vercel.app/new-orders", {
+      fetch("https://unknown-server-rho.vercel.app/new-orders", {
         method: "POST",
         headers: {
           "content-type": "application/json",
@@ -65,7 +66,7 @@ const ProductProvider = ({ children }) => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`https://unknown-server-six.vercel.app/orders/${id}`, {
+        fetch(`https://unknown-server-rho.vercel.app/orders/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
